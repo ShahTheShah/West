@@ -485,6 +485,11 @@ body {
   width: 100%;
 }
 
+.logo {
+  aspect-ratio: 206/53;
+  width: 206px;
+}
+
 .logo__wrapper {
   grid-column: 8/10;
 }
@@ -502,15 +507,14 @@ body {
 }
 
 .navigator-column {
-  height: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   transform: rotate(-90deg);
-  width: 100vh;
+  width: 60vh;
   height: -moz-fit-content;
   height: fit-content;
-  gap: 5vw;
+  gap: 2vw;
 }
 
 .navigator-column--left {
@@ -523,12 +527,14 @@ body {
   transform: rotate(-90deg) translateX(50%) translateY(-50%);
 }
 
+.navigator-item {
+  flex: 1;
+}
+
 .navigator_link {
-  padding: 15px 30px;
   display: block;
   transform-origin: left;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   height: -moz-fit-content;
   height: fit-content;
 }

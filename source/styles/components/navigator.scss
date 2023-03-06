@@ -7,14 +7,13 @@
     align-items: center;
     z-index: 1020;
     &-column {
-        height: 100%;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
 
         transform: rotate(-90deg);
-        width: 100vh; height: fit-content;
-        gap: 100vw * .05;
+        width: 60vh; height: fit-content;
+        gap: 100vw * .02;
         &--left {
             transform-origin:left;
             transform: rotate(-90deg) translateX(-50%) translateY(50%);
@@ -25,13 +24,12 @@
         }
     }
     &-item {
-
+        flex: 1;
     }
     &_link {
-        padding: 15px 30px;
         display: block;
         transform-origin:left;
-        width: fit-content; height: fit-content;
+        width: 100%; height: fit-content;
         &:after {
             background-color: $GRAY_300;
         }
