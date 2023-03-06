@@ -1,0 +1,6 @@
+mixin sprite(name)
+    svg
+        if name != null
+            use(xlink:href=`./assets/images/sprite.svg#${name}`)
+        else
+            use(xlink:href=`./assets/images/sprite.svg#default`)

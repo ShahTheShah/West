@@ -1,0 +1,28 @@
+/* Scrollbar styling */
+* {
+    &::-webkit-scrollbar {
+        display: block;
+        overflow: auto;
+        width: .4rem;
+        height: 0;
+    }
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $PRIMARY;
+        border-radius: 1rem;
+        &:hover {
+            cursor: pointer;
+            background-color: darken($PRIMARY, 15%);
+        }
+    }
+    &::-webkit-scrollbar-button,
+    &::-webkit-scrollbar-corner,
+    &::-webkit-resizer {
+        display: none;
+    }
+    scrollbar-width: thin;
+    scrollbar-color: $PRIMARY transparent;
+}

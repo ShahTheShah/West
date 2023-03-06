@@ -1,0 +1,13 @@
+.nav {
+    grid-column: 1 / 7;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    &-item {
+        flex: 0 0 25%;
+    }
+    &_link {
+        width: 100%;
+    }
+}

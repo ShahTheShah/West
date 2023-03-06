@@ -1,0 +1,37 @@
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport"    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+
+    //- Имя автора, создателя сайта
+    meta(name="author"      content="Shahriori <ShahTheShah@ya.ru>")
+    //- Собственно описание страницы
+    meta(name="description" content="Данная страница является итогом работы сборщика сайта TaskRunner_v2.0.0")
+    //- Ключевые слова, описывающие ваш сайт и принадлежность его к чему либо
+    meta(name="keywords"    content="taskrunner,gulp,javascript,css,ecmascript")
+    //- Использованное програмное обеспечение при создании страницы
+    meta(name="generator"   content="TaskRunner_v2.0.0 - Shahriori - <ShahTheShah@ya.ru>")
+    //- Тема вашего сайта(документа)
+    meta(name="subject"     content="Тема сайта")
+    //- Возрастное ограничение
+    meta(name="rating"      content="6+")
+    //- Цвет вкладок(Chrome, Safari, Vivaldi)
+    meta(name="theme-color" content="")
+
+    meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+
+    //- Иконка сайта(отображается на вкладке)
+    link(rel="icon"                         href="./favicon.svg")
+    link(rel="apple-touch-icon"             href="./apple-touch-icon.png")
+    link(rel="apple-touch-icon"             href="@images/favicons/apple-touch-icon-1024x1024.png" sizes="1024x1024")
+
+    //- Заголовок сайта(отображается на вкладке)
+    title #{page_title}
+
+    //- Далее подключение стилей
+    block styles
+        link(rel="stylesheet" href=`@styles/${page_name}.min.css`)
+
+    //- Далее подключение скриптов(обязательно указать аттрибут "defer")
+    block scripts
+        script(defer src=`@scripts/${page_name}.min.js`)

@@ -1,0 +1,13 @@
+extends init/default
+append styles
+
+append scripts
+
+block variables
+    -
+        let
+            page_title = 'Типография "Запад"', // Название сайта(отображается на вкладке)
+            page_name  = 'index'; // Требуется при указании путей для стилей и скриптов принадлежащих именно этой странице
+
+block content
+    include ../components/root

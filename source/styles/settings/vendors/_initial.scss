@@ -1,0 +1,27 @@
+@import              'fonts';
+@import          'variables';
+@import '../utils/functions';
+@import    '../utils/mixins';
+@import              'reset';
+@import          'scrollbar';
+@import          'selection';
+
+body {
+    min-width:          100vw;
+    overflow-x:        hidden;
+    background:     $BG_COLOR;
+
+    font-family: $font-family;
+    font-size:     $font-size;
+    font-weight: $font-weight;
+    line-height: calc($font-size_mobile + 6px);
+    color:        $TEXT_COLOR;
+    font-feature-settings: "lnum";
+    transition: $animation;
+    @include mediaQueryMax($breakpoint-md) {
+        line-height: calc($font-size_mobile + 4px);
+        font-size: $font-size_mobile;
+    }
+}
+
+@import '../../components/frequent';

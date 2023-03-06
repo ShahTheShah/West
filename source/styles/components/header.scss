@@ -1,0 +1,37 @@
+.header {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    z-index: 1030;
+    &-container {
+        position: relative;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        gap: 50px;
+        border-bottom: 1px solid black;
+    }
+    &_burger {
+        position: absolute;
+        transform: translateX(-100%);
+        background-color: $DARK;
+        width: 40px; height: 40px;
+        span {
+            position: absolute;
+            left: 10%;
+            display: block;
+            background-color: #fff;
+            height: 4px; width: 80%;
+            &:nth-child(1) {
+                top: 20%;
+            }
+            &:nth-child(2) {
+                top: calc(50% - 2px);
+            }
+            &:nth-child(3) {
+                bottom: 20%;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+// VARS
+$font-family: "Oswald", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-size:     18px;
+$font-size_mobile:     16px;
+$font-weight:      400;
+$TEXT_COLOR: #343434;
+$BG_COLOR:   #FFFFFF;
+
+$animation: all .2s linear;
+
+$PRIMARY:   #ff3584;
+$LIGHNT_BLUE: #CCD6F8;
+$DARK:      #343434;
+$GRAY:      #7E7E7E;
+
+// COLORS
+$BLUE:      #6583ED;
+$INDIGO:    #6610F2;
+$PURPLE:    #6F42C1;
+$PINK:      #D63384;
+$RED:       #dc3545;
+$ORANGE:    #fd7e14;
+$YELLOW:    #FFC107;
+$GREEN:     #198754;
+$TEAL:      #20C997;
+$CYAN:      #0dCAF0;
+$WHITE:     #FFFFFF;
+$LIGHT:     #F8F9FA;
+$GRAY_DARK: #343A40;
+$GRAY_100:  #f8f9fa;
+$GRAY_200:  #E9ECEF;
+$GRAY_300:  #DEE2E6;
+$GRAY_400:  #CED4DA;
+$GRAY_500:  #ADB5BD;
+$GRAY_600:  #6C757D;
+$GRAY_700:  #495057;
+$GRAY_800:  #343A40;
+$GRAY_900:  #212529;
+
+
+// BREAKPOINTS
+$breakpoint-xs:         0;
+$breakpoint-sm:     576px;
+$breakpoint-md:     768px;
+$breakpoint-lg:     992px;
+$breakpoint-xl:    1200px;
+$breakpoint-xxl:   1400px;
