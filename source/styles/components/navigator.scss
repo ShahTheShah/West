@@ -11,20 +11,17 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
+
         transform: rotate(-90deg);
-        width: 100vh;
-        gap: 200px;
+        width: 100vh; height: fit-content;
+        gap: 100vw * .05;
         &--left {
-            align-items: start;
-            .navigator_link {
-                transform: translateY(30%);
-            }
+            transform-origin:left;
+            transform: rotate(-90deg) translateX(-50%) translateY(50%);
         }
         &--right {
-            align-items: end;
-            .navigator_link {
-                transform: translateY(-35%);
-            }
+            transform-origin:right;
+            transform: rotate(-90deg) translateX(50%) translateY(-50%);
         }
     }
     &-item {
