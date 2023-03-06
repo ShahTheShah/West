@@ -429,7 +429,7 @@ body {
 
 .header-container {
   position: relative;
-  padding: 40px 0;
+  padding: 20px 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
@@ -552,6 +552,7 @@ body {
   position: relative;
   z-index: 1020;
   padding-top: 20px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 40px;
@@ -612,6 +613,12 @@ body {
 .welcome_text:nth-child(3) {
   grid-column: 1/6;
   grid-row: 9/13;
+}
+
+.partners {
+  background-color: #343434;
+  height: 100px;
+  margin-bottom: 200px;
 }
 
 /* Adaptive */
