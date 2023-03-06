@@ -21,15 +21,15 @@
 
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/Oswald/Oswald-Regular.ttf") format("truetype");
-  font-weight: 400;
+  src: url("../fonts/Oswald/Oswald-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/Oswald/Oswald-Medium.ttf") format("truetype");
-  font-weight: 500;
+  src: url("../fonts/Oswald/Oswald-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -323,12 +323,12 @@ body {
 
 .link {
   position: relative;
-  padding: 0.5vw 1vw;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: start;
   background-color: transparent;
-  font-size: 1vw;
+  font-size: 20px;
   line-height: 20px;
   color: white;
   text-decoration: none;
@@ -377,12 +377,12 @@ body {
 
 .link {
   position: relative;
-  padding: 0.5vw 1vw;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: start;
   background-color: transparent;
-  font-size: 1vw;
+  font-size: 20px;
   line-height: 20px;
   color: white;
   text-decoration: none;
@@ -508,23 +508,19 @@ body {
   justify-content: center;
   transform: rotate(-90deg);
   width: 100vh;
-  gap: 200px;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 5vw;
 }
 
 .navigator-column--left {
-  align-items: start;
-}
-
-.navigator-column--left .navigator_link {
-  transform: translateY(30%);
+  transform-origin: left;
+  transform: rotate(-90deg) translateX(-50%) translateY(50%);
 }
 
 .navigator-column--right {
-  align-items: end;
-}
-
-.navigator-column--right .navigator_link {
-  transform: translateY(-35%);
+  transform-origin: right;
+  transform: rotate(-90deg) translateX(50%) translateY(-50%);
 }
 
 .navigator_link {
